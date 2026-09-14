@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto — Reflet+Ame</title>
+  <link rel="icon" type="image/svg+xml" href="../imagenes/favicon.svg" />
+  <link rel="stylesheet" href="../css/css.css" />
+  <link rel="stylesheet" href="../css/ui.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div data-ui="header"></div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Contacto</h1>
+      <p class="page-header__subtitle">¿Tienes una pregunta? Estamos aquí para ayudarte</p>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contacto" style="padding-top:20px">
+    <div class="container contact__inner">
+      <div class="contact__info reveal">
+        <h2 class="section-title">Escríbenos</h2>
+        <div class="section-divider"></div>
+        <p class="contact__body">¿Tienes una idea para tu fragancia perfecta? ¿Quieres hacer un pedido especial? Estamos aquí para crear contigo.</p>
+
+        <div class="contact__details">
+          <div class="contact__detail"><i class="fa-regular fa-envelope"></i><span>hello@refletame.com</span></div>
+          <div class="contact__detail"><i class="fa-brands fa-whatsapp"></i><span>+57 314 000 0000</span></div>
+          <div class="contact__detail"><i class="fa-regular fa-clock"></i><span>Lun – Vie, 9:00 – 18:00</span></div>
+        </div>
+
+        <div class="footer__social" style="margin-top:28px">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener" class="social-icon" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-icon" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/573140000000" target="_blank" rel="noopener" class="social-icon" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="field-wrap">
+          <input type="text" id="cName" class="field" placeholder=" " required />
+          <label for="cName" class="field-label">Nombre completo</label>
+          <span class="field-error" id="cNameErr">Por favor ingresa tu nombre.</span>
+        </div>
+
+        <div class="field-wrap">
+          <input type="email" id="cEmail" class="field" placeholder=" " required />
+          <label for="cEmail" class="field-label">Correo electrónico</label>
+          <span class="field-error" id="cEmailErr">Ingresa un correo válido.</span>
+        </div>
+
+        <div class="field-wrap">
+          <textarea id="cMsg" class="field field--textarea" placeholder=" " required rows="5"></textarea>
+          <label for="cMsg" class="field-label">Tu mensaje</label>
+          <span class="field-error" id="cMsgErr">Por favor escribe tu mensaje.</span>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full">
+          <i class="fa-regular fa-paper-plane"></i> Enviar mensaje
+        </button>
+
+        <div class="form-success" id="formSuccess">
+          <i class="fa-solid fa-circle-check"></i> ¡Mensaje enviado! Te responderemos pronto.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div data-ui="footer"></div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="../js/store.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/contacto.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel Administrativo — Reflet+Ame</title>
+  <link rel="icon" type="image/svg+xml" href="../imagenes/favicon.svg" />
+  <link rel="stylesheet" href="../css/css.css" />
+  <link rel="stylesheet" href="../css/ui.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body.admin-page { background: #0a0a0a; }
+    .admin-header { 
+      background: #1a1a1a; 
+      padding: 20px; 
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3); 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .admin-logo { 
+      font-size: 20px; 
+      font-weight: bold; 
+      color: #8B4513;
+    }
+    .admin-user { 
+      display: flex; 
+      gap: 15px; 
+      align-items: center;
+    }
+  </style>
+</head>
+<body class="admin-page">
+
+  <header class="admin-header">
+    <div class="admin-logo">
+      <i class="fa-solid fa-gauge-high" style="margin-right: 8px;"></i>Reflet+Ame — Panel Admin
+    </div>
+    <div class="admin-user">
+      <button class="btn btn--primary btn--sm" id="adminLogout">
+        <i class="fa-solid fa-right-from-bracket"></i> Salir
+      </button>
+    </div>
+  </header>
+
+  <main id="adminContent"></main>
+
+  <script src="../js/store.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/admin-dashboard.js"></script>
+</body>
+</html>

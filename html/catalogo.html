@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo de Fragancias — Reflet+Ame</title>
+  <link rel="icon" type="image/svg+xml" href="../imagenes/favicon.svg" />
+  <link rel="stylesheet" href="../css/css.css" />
+  <link rel="stylesheet" href="../css/ui.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div data-ui="header"></div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Nuestro Catálogo</h1>
+      <p class="page-header__subtitle">Descubre nuestra colección completa de fragancias exclusivas</p>
+    </div>
+  </section>
+
+  <section class="section catalog" id="catalogo" style="padding-top:20px">
+    <div class="container">
+      <div class="catalog-toolbar">
+        <p class="catalog-count" id="catalogCount"></p>
+      </div>
+      <div class="products-grid" id="catalogGrid"></div>
+    </div>
+  </section>
+
+  <div data-ui="footer"></div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="../js/store.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/catalogo.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión — Reflet+Ame</title>
+  <link rel="icon" type="image/svg+xml" href="../imagenes/favicon.svg" />
+  <link rel="stylesheet" href="../css/css.css" />
+  <link rel="stylesheet" href="../css/ui.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="auth-page">
+
+  <header class="auth-header">
+    <div class="auth-header-inner">
+      <a href="login.html" class="logo">
+        <span class="logo__main">Reflet<span class="logo__plus">+</span>Ame</span>
+        <span class="logo__sub">Parfums Personnalisés</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="auth-container" style="padding-top:140px">
+    <div class="">
+      <h1 class="auth-title">Iniciar Sesión</h1>
+      <p class="auth-subtitle">Bienvenida de nuevo a Reflet+Ame</p>
+
+      <form class="auth-form" id="loginForm" novalidate>
+        <div class="field-wrap">
+          <input type="email" id="loginEmail" class="field" placeholder=" " required />
+          <label for="loginEmail" class="field-label">Correo electrónico</label>
+          <span class="field-error" id="loginEmailErr">Ingresa un correo válido.</span>
+        </div>
+
+        <div class="field-wrap">
+          <input type="password" id="loginPassword" class="field" placeholder=" " required />
+          <label for="loginPassword" class="field-label">Contraseña</label>
+          <span class="field-error" id="loginPasswordErr">La contraseña es requerida.</span>
+        </div>
+
+        <div class="auth-options">
+          <label class="checkbox-label">
+            <input type="checkbox" id="rememberMe" />
+            <span>Recuérdame</span>
+          </label>
+          <a href="#" class="auth-link" id="forgotLink">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full btn--lg">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i> Iniciar Sesión
+        </button>
+
+        <p class="auth-msg-error" id="loginError"></p>
+      </form>
+
+      <div class="auth-divider"><span>o</span></div>
+
+      <p class="auth-footer" style="margin-top:0">
+        ¿No tienes cuenta? <a href="registro.html" class="auth-link auth-link--bold">Regístrate aquí</a>
+      </p>
+
+      <div class="demo-hint">
+        <strong>Acceso demo:</strong><br/>
+        Cliente: cliente@demo.com / 123456<br/>
+        Admin: admin@refletame.com / admin123
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 'OLVIDÉ CONTRASEÑA' -->
+  <div class="modal-overlay" id="forgotModal">
+    <div class="modal-content">
+      <button class="modal-close" id="forgotClose"><i class="fa-solid fa-xmark"></i></button>
+      <h3 class="auth-title" style="font-size:1.5rem;margin-bottom:4px">¿Olvidaste tu contraseña?</h3>
+      <p class="auth-subtitle" style="margin-bottom:24px">Ingresa tu correo y te enviaremos instrucciones para restablecerla.</p>
+      <form id="forgotForm" novalidate>
+        <div class="field-wrap" style="margin-bottom:20px">
+          <input type="email" id="forgotEmail" class="field" placeholder=" " required />
+          <label for="forgotEmail" class="field-label">Correo electrónico</label>
+          <span class="field-error" id="forgotEmailErr">Ingresa un correo válido.</span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">
+          <i class="fa-solid fa-paper-plane"></i> Enviar instrucciones
+        </button>
+        <div class="form-success" id="forgotSuccess">
+          <i class="fa-solid fa-circle-check"></i> ¡Revisa tu correo para restablecer tu contraseña!
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/store.js"></script>
+  <script src="../js/auth-page.js"></script>
+</body>
+</html>

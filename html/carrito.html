@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Carrito — Reflet+Ame</title>
+  <link rel="icon" type="image/svg+xml" href="../imagenes/favicon.svg" />
+  <link rel="stylesheet" href="../css/css.css" />
+  <link rel="stylesheet" href="../css/ui.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div data-ui="header"></div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Mi Carrito</h1>
+      <p class="page-header__subtitle">Revisa tus fragancias antes de finalizar la compra</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cart-page">
+        <div id="cartList"></div>
+
+        <aside class="cart-page__summary">
+          <h3 style="font-family:var(--font-display);font-weight:400;margin-bottom:16px">Resumen del pedido</h3>
+          <div class="cart-summary-line"><span>Productos</span><span id="sumCount">0</span></div>
+          <div class="cart-summary-line"><span>Subtotal</span><span id="sumSub">$0</span></div>
+          <div class="cart-summary-line grand"><span>Total</span><strong id="sumTotal">$0</strong></div>
+          <button class="btn btn--primary btn--full btn--lg" id="cartCheckout" style="margin-top:20px">
+            <i class="fa-solid fa-check"></i> Finalizar compra
+          </button>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <div data-ui="footer"></div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="../js/store.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/carrito.js"></script>
+</body>
+</html>

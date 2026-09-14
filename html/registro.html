@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro — Reflet+Ame</title>
+  <link rel="icon" type="image/svg+xml" href="../imagenes/favicon.svg" />
+  <link rel="stylesheet" href="../css/css.css" />
+  <link rel="stylesheet" href="../css/ui.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="auth-page">
+
+  <header class="auth-header">
+    <div class="auth-header-inner">
+      <a href="login.html" class="logo">
+        <span class="logo__main">Reflet<span class="logo__plus">+</span>Ame</span>
+        <span class="logo__sub">Parfums Personnalisés</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="auth-container" style="padding-top:140px">
+    <div class="" style="max-width:560px">
+      <h1 class="auth-title">Crear tu Cuenta</h1>
+      <p class="auth-subtitle">Únete a Reflet+Ame y crea tu fragancia ideal</p>
+
+      <form class="auth-form" id="registerForm" novalidate>
+        <div class="field-row">
+          <div class="field-wrap">
+            <input type="text" id="registerName" class="field" placeholder=" " required />
+            <label for="registerName" class="field-label">Nombres</label>
+          </div>
+          <div class="field-wrap">
+            <input type="text" id="registerLastName" class="field" placeholder=" " required />
+            <label for="registerLastName" class="field-label">Apellidos</label>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-wrap">
+            <input type="text" id="registerPhone" class="field" placeholder=" " required />
+            <label for="registerPhone" class="field-label">Teléfono</label>
+          </div>
+          <div class="field-wrap">
+            <select id="registerCity" class="field" required>
+              <option value="">Ciudad</option>
+              <option>Bogotá</option><option>Medellín</option><option>Cali</option>
+              <option>Barranquilla</option><option>Cartagena</option><option>Bucaramanga</option>
+              <option>Pereira</option><option>Manizales</option><option>Cúcuta</option><option>Otra</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-wrap">
+          <input type="email" id="registerEmail" class="field" placeholder=" " required />
+          <label for="registerEmail" class="field-label">Correo electrónico</label>
+        </div>
+
+        <div class="field-row">
+          <div class="field-wrap">
+            <input type="password" id="registerPassword" class="field" placeholder=" " required />
+            <label for="registerPassword" class="field-label">Contraseña (mín. 6)</label>
+          </div>
+          <div class="field-wrap">
+            <input type="password" id="registerPasswordConfirm" class="field" placeholder=" " required />
+            <label for="registerPasswordConfirm" class="field-label">Confirmar Contraseña</label>
+          </div>
+        </div>
+
+        <label class="checkbox-label" style="margin-bottom:8px">
+          <input type="checkbox" id="termsAgreed" />
+          <span>Acepto los Términos y Condiciones y la Política de Privacidad</span>
+        </label>
+
+        <button type="submit" class="btn btn--primary btn--full btn--lg">
+          <i class="fa-solid fa-user-plus"></i> Crear Cuenta
+        </button>
+
+        <p class="auth-msg-error" id="registerError"></p>
+      </form>
+
+      <div class="auth-divider"><span>o</span></div>
+
+      <p class="auth-footer" style="margin-top:0">
+        ¿Ya tienes cuenta? <a href="login.html" class="auth-link auth-link--bold">Inicia sesión</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="../js/store.js"></script>
+  <script src="../js/auth-page.js"></script>
+</body>
+</html>

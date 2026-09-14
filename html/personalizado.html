@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personaliza tu Fragancia — Reflet+Ame</title>
+  <link rel="icon" type="image/svg+xml" href="../imagenes/favicon.svg" />
+  <link rel="stylesheet" href="../css/css.css" />
+  <link rel="stylesheet" href="../css/ui.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div data-ui="header"></div>
+
+  <section class="section customizer" id="personaliza">
+    <div class="customizer__bg"></div>
+    <div class="container customizer__inner">
+
+      <div class="customizer__preview">
+        <div class="bottle-preview-wrap">
+          <div class="bottle-glow" id="bottleGlow"></div>
+          <img id="bottleImg" src="../imagenes/frascos/clasico.svg" alt="Frasco personalizado" class="bottle-image"/>
+          <div class="bottle-label-wrap">
+            <p class="bottle-label" id="bottleLabel">Tu fragancia</p>
+          </div>
+        </div>
+
+        <div class="preview-info">
+          <div class="preview-info__item">
+            <span class="preview-info__label">Frasco</span>
+            <span class="preview-info__value" id="previewBottle">Clásico</span>
+          </div>
+          <div class="preview-info__item">
+            <span class="preview-info__label">Esencia Principal</span>
+            <span class="preview-info__value" id="previewFamily">—</span>
+          </div>
+          <div class="preview-info__item">
+            <span class="preview-info__label">Esencia Opcional</span>
+            <span class="preview-info__value" id="previewSecondary">—</span>
+          </div>
+          <div class="preview-info__item">
+            <span class="preview-info__label">Intensidad</span>
+            <span class="preview-info__value" id="previewIntensity">—</span>
+          </div>
+          <div class="preview-info__item">
+            <span class="preview-info__label">Precio Estimado</span>
+            <span class="preview-info__value" id="previewPrice">$250.000</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="customizer__form">
+        <h2 class="customizer__title">Crea tu Fragancia Única</h2>
+        <p class="customizer__subtitle">Cada paso te acerca más a tu perfume perfecto.</p>
+
+        <div class="form-step">
+          <h3 class="form-step__title"><span class="form-step__num">01</span> Elige tu frasco</h3>
+          <div class="bottle-selector" id="bottleSelector"></div>
+        </div>
+
+        <div class="form-step">
+          <h3 class="form-step__title"><span class="form-step__num">02</span> Esencia Principal</h3>
+          <div class="choices-grid" id="familyChoices"></div>
+        </div>
+
+        <div class="form-step">
+          <h3 class="form-step__title"><span class="form-step__num">03</span> Esencia Opcional (Mezcla)</h3>
+          <div class="choices-grid" id="secondaryChoices"></div>
+        </div>
+
+        <div class="form-step">
+          <h3 class="form-step__title"><span class="form-step__num">04</span> Intensidad</h3>
+          <div class="intensity-track" id="intensityChoices"></div>
+        </div>
+
+        <div class="form-step">
+          <h3 class="form-step__title"><span class="form-step__num">05</span> Bautiza tu Fragancia</h3>
+          <div class="custom-input-wrap">
+            <input type="text" id="fragranceName" class="custom-input" placeholder=" " maxlength="40"/>
+            <label for="fragranceName" class="custom-label">Nombre personalizado (opcional)</label>
+          </div>
+        </div>
+
+        <button class="btn btn--primary btn--full btn--lg" id="generateBtn">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Generar mi fragancia
+        </button>
+
+        <div class="result-card" id="resultCard">
+          <div class="result-card__inner">
+            <i class="fa-solid fa-circle-check result-card__icon"></i>
+            <h4 class="result-card__name" id="resultName">—</h4>
+            <div class="result-card__tags" id="resultTags"></div>
+            <p class="result-card__msg">Tu fragancia personalizada ha sido creada. Nuestro equipo la preparará con los mejores ingredientes seleccionados especialmente para ti.</p>
+            <button class="btn btn--primary btn--sm" id="addCustomToCart">
+              <i class="fa-regular fa-bag-shopping"></i> Añadir al carrito
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div data-ui="footer"></div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="../js/store.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/personalizado.js"></script>
+</body>
+</html>

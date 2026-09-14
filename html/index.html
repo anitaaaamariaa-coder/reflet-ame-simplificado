@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio — Reflet+Ame</title>
+  <link rel="icon" type="image/svg+xml" href="../imagenes/favicon.svg" />
+  <link rel="stylesheet" href="../css/css.css" />
+  <link rel="stylesheet" href="../css/ui.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div data-ui="header"></div>
+
+  <!-- Banner de bienvenida -->
+  <div class="welcome-strip" id="welcomeStrip"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio" style="margin-top:0">
+    <div class="hero__bg">
+      <div class="hero__overlay"></div>
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Colección Exclusive 2025</p>
+      <h1 class="hero__title">Tu esencia,<br><em>tu historia.</em></h1>
+      <p class="hero__subtitle">Creamos fragancias únicas que reflejan<br>tu personalidad más íntima.</p>
+      <div class="hero__cta">
+        <a href="personalizado.html" class="btn btn--primary">Crear mi perfume</a>
+        <a href="catalogo.html" class="btn btn--ghost">Descubrir catálogo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTORIA DE LA MARCA -->
+  <section class="section mini-section" id="historia">
+    <div class="container split">
+      <div class="split__media split__deco reveal">
+        <img src="../imagenes/productos/lumiere-doree.svg" alt="Frasco emblemático Reflet+Ame"/>
+      </div>
+      <div class="reveal" style="--delay:.2s">
+        <p class="section-eyebrow">Nuestra Historia</p>
+        <h2 class="section-title">El arte de lo<br><em>efímero hecho eterno</em></h2>
+        <div class="section-divider" style="margin-left:0"></div>
+        <p class="about__body" style="margin-top:20px">
+          En Reflet+Ame creemos que el perfume es el idioma más íntimo del alma.
+          <em>Reflet</em> —reflejo en francés— y <em>Ame</em> —alma— forman el corazón de nuestra
+          filosofía: cada fragancia que creamos es un espejo líquido de quien eres.
+        </p>
+        <p class="about__body">
+          Trabajamos con maestros perfumistas que seleccionan a mano cada ingrediente, combinando
+          la tradición francesa con una sensibilidad contemporánea. El resultado es un perfume que
+          no solo hueles, sino que <em>sientes</em>.
+        </p>
+        <div class="stat-row">
+          <div class="stat-item"><strong>+1.200</strong><span>Fragancias creadas</span></div>
+          <div class="stat-item"><strong>2015</strong><span>Año de fundación</span></div>
+          <div class="stat-item"><strong>100%</strong><span>Hecho a mano</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS + INFORMACIÓN CORPORATIVA -->
+  <section class="section" id="nosotros" style="background:var(--bg-alt);padding:70px 0">
+    <div class="container split">
+      <div class="reveal">
+        <p class="section-eyebrow">Sobre Nosotros</p>
+        <h2 class="section-title">Información<br><em>Corporativa</em></h2>
+        <div class="section-divider" style="margin-left:0"></div>
+        <p class="about__body" style="margin-top:20px">
+          Reflet+Ame S.A.S. es una casa colombiana de perfumería artesanal fundada en Bogotá.
+          Nos dedicamos a diseñar fragancias personalizadas y a seleccionar colecciones exclusivas
+          que acompañan los momentos más importantes de nuestros clientes.
+        </p>
+        <div class="about__values">
+          <div class="about__value"><i class="fa-solid fa-leaf"></i><span>Ingredientes naturales</span></div>
+          <div class="about__value"><i class="fa-solid fa-hands-holding-heart"></i><span>Hecho a mano</span></div>
+          <div class="about__value"><i class="fa-solid fa-recycle"></i><span>Packaging sostenible</span></div>
+          <div class="about__value"><i class="fa-solid fa-handshake"></i><span>Compromiso con el cliente</span></div>
+        </div>
+      </div>
+      <div class="reveal" style="--delay:.2s">
+        <div class="admin-table-wrap" style="border-radius:var(--radius-lg)">
+          <table class="admin-table">
+            <tbody>
+              <tr><td style="font-weight:600">Razón social</td><td>Reflet & Ame S.A.S.</td></tr>
+              <tr><td style="font-weight:600">Sede principal</td><td>Bogotá, Colombia</td></tr>
+              <tr><td style="font-weight:600">Fundación</td><td>2015</td></tr>
+              <tr><td style="font-weight:600">Sector</td><td>Perfumería artesanal</td></tr>
+              <tr><td style="font-weight:600">Correo</td><td>hello@refletame.com</td></tr>
+              <tr><td style="font-weight:600">Teléfono</td><td>+57 314 000 0000</td></tr>
+              <tr><td style="font-weight:600">Horario</td><td>Lun – Vie, 9:00 – 18:00</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS DESTACADOS -->
+  <section class="section featured" id="destacados">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Colección Destacada</p>
+        <h2 class="section-title">Perfumes Estelares</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="products-grid" id="featuredGrid"></div>
+      <div class="section-cta">
+        <a href="catalogo.html" class="btn btn--primary btn--lg">
+          <i class="fa-solid fa-sparkles"></i> Descubrir catálogo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO PREVIEW -->
+  <section class="section" id="catalogo-preview" style="background:var(--bg-alt);padding:70px 0">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Nuestro Catálogo</p>
+        <h2 class="section-title">Explora nuestras fragancias</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="products-grid" id="catalogGrid"></div>
+      <div class="section-cta">
+        <a href="catalogo.html" class="btn btn--ghost btn--lg" style="border-color:var(--primary);color:var(--primary)">
+          Ver catálogo completo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REDES SOCIALES -->
+  <section class="section mini-section" id="redes" style="padding:50px 0">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Síguenos</p>
+        <h2 class="section-title">Nuestras <em>Redes Sociales</em></h2>
+        <div class="section-divider"></div>
+        <p class="about__body" style="margin-top:16px;max-width:520px;margin-left:auto;margin-right:auto">
+          Únete a nuestra comunidad y descubre promociones, lanzamientos y el detrás de escena
+          de la creación de cada fragancia.
+        </p>
+      </div>
+      <div class="footer__social" style="justify-content:center;gap:18px" id="socialRow">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-icon" style="width:52px;height:52px;font-size:1.2rem" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener" class="social-icon" style="width:52px;height:52px;font-size:1.2rem" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.pinterest.com/" target="_blank" rel="noopener" class="social-icon" style="width:52px;height:52px;font-size:1.2rem" title="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-icon" style="width:52px;height:52px;font-size:1.2rem" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/573140000000" target="_blank" rel="noopener" class="social-icon" style="width:52px;height:52px;font-size:1.2rem" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <div data-ui="footer"></div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="../js/store.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/home.js"></script>
+</body>
+</html>

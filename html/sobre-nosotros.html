@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre Nosotros — Reflet+Ame</title>
+  <link rel="icon" type="image/svg+xml" href="../imagenes/favicon.svg" />
+  <link rel="stylesheet" href="../css/css.css" />
+  <link rel="stylesheet" href="../css/ui.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div data-ui="header"></div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Sobre Nosotros</h1>
+      <p class="page-header__subtitle">Conoce la historia detrás de cada fragancia</p>
+    </div>
+  </section>
+
+  <section class="section about-section" id="nosotros">
+    <div class="container about__inner">
+      <div class="about__visual reveal">
+        <div class="about__img-frame">
+          <img src="../imagenes/productos/ambar-nocturno.svg" alt="Frasco emblemático" style="width:100%;border-radius:var(--radius-lg)"/>
+          <div class="about__frame-deco"></div>
+        </div>
+        <div class="about__stat-card">
+          <span class="about__stat-num">+1.200</span>
+          <span class="about__stat-label">Fragancias creadas</span>
+        </div>
+      </div>
+
+      <div class="about__text reveal" style="--delay:.2s">
+        <h2 class="section-title">El arte de lo<br><em>efímero hecho eterno</em></h2>
+        <div class="section-divider"></div>
+        <p class="about__body">
+          En Reflet+Ame creemos que el perfume es el idioma más íntimo del alma. <em>Reflet</em> —reflejo
+          en francés— y <em>Ame</em> —alma— forman el corazón de nuestra filosofía: cada fragancia que
+          creamos es un espejo líquido de quien eres.
+        </p>
+        <p class="about__body">
+          Trabajamos con maestros perfumistas que seleccionan a mano cada ingrediente, combinando tradición
+          francesa con sensibilidad contemporánea. El resultado es un perfume que no solo hueles, sino que <em>sientes</em>.
+        </p>
+        <div class="about__values">
+          <div class="about__value"><i class="fa-solid fa-leaf"></i><span>Ingredientes naturales</span></div>
+          <div class="about__value"><i class="fa-solid fa-hands-holding-heart"></i><span>Hecho a mano</span></div>
+          <div class="about__value"><i class="fa-solid fa-recycle"></i><span>Packaging sostenible</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section team-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Nuestro Equipo</p>
+        <h2 class="section-title">Equipo de Desarrollo</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-avatar">AP</div>
+          <h3>Ana María Pulido</h3>
+          <p class="team-card__role">Desarrolladora · Frontend</p>
+          <p class="team-card__bio">Encargada de la interfaz, la experiencia de usuario y el catálogo de fragancias.</p>
+        </div>
+
+        <div class="team-card reveal" style="--delay:.15s">
+          <div class="team-avatar">JP</div>
+          <h3>Julián David Posse</h3>
+          <p class="team-card__role">Desarrollador · Backend y datos</p>
+          <p class="team-card__bio">Responsable de la lógica de datos, administración y roles de la plataforma.</p>
+        </div>
+
+        <div class="team-card reveal" style="--delay:.3s">
+          <div class="team-avatar">JC</div>
+          <h3>Juan Sebastián Caballero</h3>
+          <p class="team-card__role">Diseñador · Producto</p>
+          <p class="team-card__bio">Diseña los frascos, las colecciones y la identidad visual de la marca.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div data-ui="footer"></div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="../js/store.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/static-page.js"></script>
+</body>
+</html>
